@@ -1,0 +1,153 @@
+/* 
+
+--- 01 TYPOGRAPHY SYSTEM ---
+
+-- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+-- Font weights:
+- Default: 400
+- Medium: 500
+- Bold: 700
+
+-- Line heights:
+- Default: 1
+- Small: ND
+- Paragraph default: ND
+
+--- 02 COLORS ---
+-- TEST COLORS --
+- Header: #00a3e8
+- Main: #23b14d
+- Nav: #c7bfe7
+- Footer: #3f47cc
+-- OTHER COLORS --
+- Greys:
+ + #444
+ + #666
+ + 
+
+--- 03 SHADOWS ---
+
+--- 04 BORDER-RADIUS ---
+
+- Default:
+
+--- 05 WHITESPACES --- 
+
+-- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 32rem 1fr;
+  grid-template-rows: 8rem 1fr 8rem;
+}
+
+.box-name {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #666;
+}
+
+.header,
+.nav,
+.main-content,
+.footer {
+  padding: 2.4rem;
+  border: 0.1rem solid #444;
+}
+
+.header {
+  /* background-color: #00a3e8; */
+  grid-column: 1 / -1;
+}
+
+/* .nav {
+  background-color: #c7bfe7;
+} */
+
+/* .menu-bar {
+} */
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-top: 4.8rem;
+  list-style: none;
+}
+
+.menu-item:link,
+.menu-item:visited {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #444;
+}
+
+.menu-item:hover,
+.menu-item:active {
+  color: #23b14d;
+}
+
+/* .main-content {
+  background-color: #23b14d;
+} */
+
+.new-user-form {
+  margin-top: 4.8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+  padding: 2.4rem;
+  align-items: center;
+  justify-items: auto;
+}
+
+.new-user-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 1.2rem;
+}
+
+.new-user-form input,
+.new-user-form select,
+.new-user-form button {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  border: 1px dashed #444;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.new-user-form button {
+  cursor: pointer;
+  align-self: end;
+  border-style: solid;
+}
+
+.footer {
+  /* background-color: #3f47cc; */
+  grid-column: 1 / -1;
+}

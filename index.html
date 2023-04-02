@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout Model</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="container">
+    <header class="header">
+      <h3 class="box-name">.header</h3>
+    </header>
+    <nav class="nav">
+      <h3 class="box-name">.nav</h3>
+      <div class="menu-bar">
+        <ul class="menu-items">
+          <li>
+            <a href="#" class="menu-item">New User</a>
+          </li>
+          <li>
+            <a href="#" class="menu-item">New Category</a>
+          </li>
+          <li>
+            <a href="#" class="menu-item"
+              >Category <sup>{auto-generated}</sup></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="main-content">
+      <h3 class="box-name">.main-content</h3>
+      <form action="#" class="new-user-form" method="">
+        <!-- (password, Name, Last Name, email, age, gender, category) -->
+        <div>
+          <label for="name">First Name</label>
+          <input id="name" type="text" placeholder="John" required />
+        </div>
+
+        <div>
+          <label for="lastname">Last Name</label>
+          <input id="lastname" type="text" placeholder="Smith" required />
+        </div>
+
+        <div>
+          <label for="email">Email address</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="me@example.com"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="password">Password</label>
+          <input
+            id="password"
+            type="password"
+            placeholder="Your password"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="age">Age</label>
+          <input id="age" type="number" placeholder="Your age" required />
+        </div>
+
+        <div>
+          <label for="gender">Gender</label>
+          <select name="" id="gender" required>
+            <option value="">Please choose one option</option>
+            <option value="m">Masculine</option>
+            <option value="f">Feminine</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="category">Category</label>
+          <input id="category" type="text" placeholder="Category" />
+        </div>
+
+        <button class="submit">Submit</button>
+      </form>
+    </main>
+    <footer class="footer">
+      <h3 class="box-name">.footer</h3>
+    </footer>
+  </body>
+</html>
