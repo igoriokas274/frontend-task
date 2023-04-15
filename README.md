@@ -21,4 +21,4 @@
 
 ### Layout example:
 
-![Layout example](/assets/layout_example.png)
+![Layout example](/assets/layout_example.png "Layout example")
