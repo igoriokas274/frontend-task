@@ -20,3 +20,5 @@
 - As an easier alternative, application can be limited to predefined categories without ability to create new ones.
 
 ### Layout example:
+
+![Layout example](/assets/layout_example.png)
