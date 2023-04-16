@@ -12,7 +12,7 @@ const btnsCloseModal = document.querySelectorAll(".close-modal");
 const overlay = document.querySelector(".overlay");
 
 // generate random nested array with categories & subcategories. Please select randomisation value [default = 10]
-const randomiser = 5;
+const randomiser = 10;
 const generatedCategories = Array.from(
   { length: Math.trunc(Math.random() * randomiser + 1) },
   (_, i) =>

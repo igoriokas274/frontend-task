@@ -22,3 +22,7 @@
 ### Layout example:
 
 ![Layout example](/assets/layout_example.png "Layout example")
+
+### Visualization of solutions:
+
+![Stage 1](/assets/2023-04-16.png) _Stage 2023-04-16_
