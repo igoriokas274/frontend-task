@@ -20,24 +20,46 @@
     <nav class="nav">
       <h3 class="box-name">.nav</h3>
       <div class="menu-bar">
-        <ul class="menu-items">
-          <li>
-            <a href="#" class="menu-item">New User</a>
-          </li>
-          <li>
-            <a href="#" class="menu-item">New Category</a>
-          </li>
-          <li>
-            <a href="#" class="menu-item"
-              >Category <sup>{auto-generated}</sup></a
-            >
-          </li>
-        </ul>
+        <div class="menu-items">
+          <div>
+            <a href="#" class="menu-item show-modal-user">New User</a>
+          </div>
+          <div>
+            <a href="#" class="menu-item show-modal-category">New Category</a>
+          </div>
+        </div>
+        <div class="categories">
+          <div class="category-block">
+            <a href="#" class="category__value">Category 1</a>
+            <div class="subcategory">
+              <a href="#" class="subcategory__value">Sub-category 1</a>
+            </div>
+            <div class="subcategory">
+              <a href="#" class="subcategory__value">Sub-category 2</a>
+            </div>
+            <div class="subcategory">
+              <a href="#" class="subcategory__value">Sub-category 3</a>
+            </div>
+          </div>
+          <div class="category-block">
+            <a href="#" class="category__value">Category 2</a>
+            <div class="subcategory">
+              <a href="#" class="subcategory__value">Sub-category 1</a>
+            </div>
+            <div class="subcategory">
+              <a href="#" class="subcategory__value">Sub-category 2</a>
+            </div>
+          </div>
+        </div>
       </div>
     </nav>
     <main class="main-content">
       <h3 class="box-name">.main-content</h3>
-      <form action="#" class="new-user-form" method="">
+    </main>
+    <div class="modal modal-user hidden">
+      <button class="close-modal">&times;</button>
+      <h3 class="box-name">.modal-new_user</h3>
+      <form action="#" class="form" method="">
         <!-- (password, Name, Last Name, email, age, gender, category) -->
         <div>
           <label for="name">First Name</label>
@@ -90,9 +112,32 @@
 
         <button class="submit">Submit</button>
       </form>
-    </main>
+    </div>
+    <div class="modal modal-category hidden">
+      <button class="close-modal">&times;</button>
+      <h3 class="box-name">.modal-new_category</h3>
+      <form action="#" class="form" method="">
+        <div>
+          <label for="new-category">Category</label>
+          <input id="new-category" type="text" placeholder="Category [x]" />
+        </div>
+
+        <div>
+          <label for="new-subcategory">Sub-category</label>
+          <input
+            id="new-subcategory"
+            type="text"
+            placeholder="Sub-category [Y]"
+          />
+        </div>
+
+        <button class="submit">Submit</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
     <footer class="footer">
       <h3 class="box-name">.footer</h3>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
